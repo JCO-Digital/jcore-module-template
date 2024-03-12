@@ -1,9 +1,8 @@
 <?php // phpcs:ignore WordPress.Files.FileName.InvalidClassFileName
 
-namespace Jcore\Ydin;
+namespace Jcore\Template;
 
-use Jcore\Ydin\Settings\Customizer;
-use Timber\Timber;
+use Jcore\Ydin\BootstrapInterface;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
@@ -22,8 +21,7 @@ class Bootstrap implements BootstrapInterface {
 	 * Bootstrap constructor.
 	 */
 	private function __construct() {
-		Timber::init();
-		Customizer::init();
+		// TODO: Add stuff here to use
 	}
 
 	/**
